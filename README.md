@@ -48,3 +48,40 @@ If you were to use third-party tools to complete this challenge, what would you 
 ### Time Allotment
 
 We respect your time and would prefer you not spend more than 3-5 hours. Feel free to include code comments to indicate any features you don't have time to implement.
+
+
+
+## STEPS
+npm init -y
+
+npm install express
+
+mkdir public
+mv index.html public/
+mv script.js public/
+
+
+#server.js
+// server.js
+const express = require('express');
+const app = express();
+const path = require('path');
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+});
+
+
+#package json
+"scripts": {
+    "start": "node server.js"
+},
+
+
+#npm install
+
+#npm start
+

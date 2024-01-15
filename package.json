@@ -1,0 +1,16 @@
+{
+  "name": "carousel_exam",
+  "version": "1.0.0",
+  "description": "Using the HTML below, write a self-executing vanilla JavaScript function that cycles through the images (much like a carousel). Each image should be displayed for roughly 1 second before moving on to the next image.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
